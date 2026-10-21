@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Livro</title>
+</head>
+
+<body>
+  <h1> Livros online </h1>
+  <p> Título: <input type="text" id="titulo"></p>
+  <p> Autor: <input type="text" id="autor"></p>
+  <p> Preço:<input type="text" id="preco"></p>
+  <p>
+  <input type="button" value="Mostrar" id="mostrar" onclick = "mostraLivro()">
+  </p>
+  <p id="resposta"></p>
+
+  <script>
+  function mostraLivro(){
+  var titulo = document.getElementById("titulo").value;
+  var autor = document.getElementById("autor").value;
+  var preco = document.getElementById("preco").value;
+  document.getElementById("resposta").innerHTML = "Título: " + titulo + "<br>" +
+  "Autor: " + autor + "<br>" + "Preço: " + preco + "<br>";}
+
+  </script>
+</body>
+
+</html>
